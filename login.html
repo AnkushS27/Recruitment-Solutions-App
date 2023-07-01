@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp Form</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+          <div class="navbar">
+            <div class="nav-container">
+              <div class="logo">
+                <h2>Navbar</h2>
+              </div>
+              <div class="items">
+                  <div class="menu-items">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="search.html">Search Candidate</a></li>
+                      <li><a href="login.html">Login/SignUp</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome!</h2>
+                    <p id="accountText">Create your account.<br>For Free!</p>
+                    <a href="#" class="btn" id="signupBtn">Sign Up</a>
+                </div>
+            </div>
+    
+            <div class="col-right">
+                <div class="login-form">
+                    <h2 id="formTitle">Login</h2>
+                    <form action="">
+                        <p>
+                            <label>Username/Email address<span>*</span></label>
+                            <input type="text" placeholder="Username or Email" required>
+                        </p>
+                        <p>
+                            <label>Password<span>*</span></label>
+                            <input type="password" placeholder="Password" required>
+                        </p>
+                        <p>
+                            <input type="submit" value="Sign In">
+                        </p>
+                        <p id="forgot-password">
+                            <a href="">Forgot password?</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="Container">
+          <p>&copy; 2023 Recruitment Solutions Pvt. Ltd.</p>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>About Us</li>
+            <li>Terms and Conditions</li>
+            <li>Disclamer</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+    </footer>
+
+    <script>
+        const signupBtn = document.getElementById('signupBtn');
+const formTitle = document.getElementById('formTitle');
+const accountText = document.getElementById('accountText');
+const forgotPassword = document.getElementById('forgot-password');
+const signInValue = document.querySelector('input[type="submit"]').value;
+
+signupBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    if (formTitle.textContent === 'Login') {
+        formTitle.textContent = 'Signup';
+        signupBtn.textContent = 'Login';
+        document.querySelector('input[type="submit"]').value = 'Sign Up';
+        forgotPassword.style.display = 'none'; // Hide the "Forgot password?" link
+        accountText.innerHTML = 'Already have an account!';
+    } else {
+        formTitle.textContent = 'Login';
+        signupBtn.textContent = 'Sign Up';
+        document.querySelector('input[type="submit"]').value = signInValue;
+        forgotPassword.style.display = 'block'; // Show the "Forgot password?" link
+        accountText.innerHTML = 'Create your account.<br>For Free!';
+    }
+});
+
+      </script>
+</body>
+</html>

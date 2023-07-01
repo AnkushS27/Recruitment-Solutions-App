@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Search Page</title>
+    <!-- Add your CSS stylesheets here -->
+    <link rel="stylesheet" href="candidate.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+          <div class="navbar">
+            <div class="nav-container">
+              <div class="logo">
+                <h2>Navbar</h2>
+              </div>
+              <div class="items">
+                  <div class="menu-items">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="search.html">Search Candidate</a></li>
+                      <li><a href="login.html">Login/SignUp</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+          <h1>Search for Candidates</h1>
+          <form class="search-form">
+            <input type="text" placeholder="Search by location">
+            <input type="text" placeholder="Search by job role">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+    
+        <div class="filter-container">
+          <h2>Filter by</h2>
+          <form class="filter-form">
+            <label for="location">Location:</label>
+            <select id="location">
+              <option value="">All</option>
+              <option value="new-york">New York</option>
+              <option value="london">London</option>
+              <!-- Add more location options here -->
+            </select>
+    
+            <label for="job-role">Job Role:</label>
+            <select id="job-role">
+              <option value="">All</option>
+              <option value="software-engineer">Software Engineer</option>
+              <option value="marketing-professional">Marketing Professional</option>
+              <!-- Add more job role options here -->
+            </select>
+    
+            <button type="submit">Apply Filters</button>
+          </form>
+        </div>
+    
+        <div class="candidate-list">
+          <h2>Search Results</h2>
+    
+          <div class="candidate">
+            <div class="basic-profile">
+              <img src="https://img.freepik.com/free-vector/illustration-businessman_53876-5856.jpg?w=740&t=st=1688160579~exp=1688161179~hmac=5089a517fd4824c89729e1a86c504cc048d8f3dd363d973490d471838e628d76" alt="Candidate 1">
+              <h3>John Smith</h3>
+            </div>
+            <p>Experienced software engineer with a passion for developing innovative solutions.</p>
+            <a href="profile.html">View Profile</a>
+          </div>
+    
+          <div class="candidate">
+            <div class="basic-profile">
+              <img src="https://img.freepik.com/free-vector/illustration-businesswoman_53876-5857.jpg?w=740&t=st=1688160552~exp=1688161152~hmac=8bc0873b8a484b966e0f642d9e6c4b60e90e9c2dcdfcfa336ecdfa3c08925df9" alt="Candidate 2">
+              <h3>Sarah Johnson</h3>
+            </div>
+            <p>Skilled marketing professional with a track record of driving successful campaigns.</p>
+            <a href="profile.html">View Profile</a>
+          </div>
+    
+          <!-- Add more candidate listings here -->
+    
+          <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next Page</a>
+            <!-- Add more pagination links here -->
+          </div>
+        </div>
+      </main>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="Container">
+        <p>&copy; 2023 Recruitment Solutions Pvt. Ltd.</p>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>About Us</li>
+          <li>Terms and Conditions</li>
+          <li>Disclamer</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
+    
+ 

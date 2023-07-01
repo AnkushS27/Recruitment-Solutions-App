@@ -1,0 +1,287 @@
+/* Set basic styling for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1600px;
+  position: relative;
+}
+
+/* Style the header section */
+header {
+    background-color: #f2f2f2;
+    border-bottom: 4px #fff solid;
+    width: 100%;
+  }
+    
+    .navbar {
+      width: 100%;
+    }
+  
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 10px 50px;
+    }
+  
+    
+    .logo {
+      position: relative;
+      font-size: 1.2rem;
+      color: #0e2431;
+    }
+  
+    .items {
+      position: relative;
+    }
+    
+    .navbar .menu-items {
+      display: flex;
+      width: 100%;
+    }
+    
+    .navbar .nav-container li {
+      list-style: none;
+    }
+    
+    .navbar .nav-container a {
+      text-decoration: none;
+      color: #0e2431;
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding: 0.7rem;
+    }
+    
+    .navbar .nav-container a:hover {
+      font-weight: bolder;
+    }
+    
+    .navbar .menu-items li {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+/* Home page code starts here.. */
+
+/* Style the hero section */
+section {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 97.5%;
+  margin: 0;
+}
+
+section .hexagon1, section .hexagon2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #ff8a00;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  z-index: 1;
+  transform: rotate(90deg);
+}
+
+section .hexagon1 {
+  left: -7%;
+  top: 0;
+}
+
+section .hexagon2 {
+  right: -7%;
+  bottom: 0;
+}
+
+section:first-of-type h1 {
+  position: relative;
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+  z-index: 5;
+}
+
+section:first-of-type p {
+  position: relative;
+  color: #666;
+  font-size: large;
+  font-weight: bold;
+  padding: 0 200px;
+  z-index: 5;
+}
+
+/* Style the features section */
+.section {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+section:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 97.5%;
+  margin: 0;
+}
+
+section:nth-of-type(2) > div {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  vertical-align: top;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style the testimonials section */
+section:nth-of-type(3) {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  width: 97.5%;
+  gap: 40px;
+}
+
+blockquote {
+  position: relative;
+  border-left: 3px dashed #666;
+  border-top: 3px dashed #666;
+  border-right: 3px dotted #b1b1b1;
+  border-bottom: 3px dotted #b1b1b1;
+  padding: 20px;
+  max-width: 500px;
+}
+
+blockquote img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+cite {
+  font-style: italic;
+}
+
+/* Style the how it works section */
+section:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 97.5%;
+  margin: 0;
+}
+
+section ol {
+  list-style-type: none;
+  border-left: 5px solid #0e2431;
+  border-radius: 2.5px;
+}
+
+section ol li {
+  font-size: x-large;
+  color: #555;
+}
+
+section ol li:nth-child(2), section ol li:nth-child(3) {
+  margin: 30px 0;
+}
+
+
+.design1 {
+  left: -10%;
+
+}
+.design2 {
+  right: -10%;
+
+}
+
+/* Style the call to action button */
+section:nth-of-type(5) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 97.5%;
+  background-image: url('https://img.freepik.com/free-photo/business-partners-handshake-global-corporate-with-technology-concept_53876-102615.jpg?w=1060&t=st=1688212966~exp=1688213566~hmac=b823dac755590d0e8b690a1eb75559c2e570136655204a5d50dce27c066c49b3');
+  background-size: cover;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  min-width: 130px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Style the footer section */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .Container p{
+  font-weight: 600;
+}
+
+footer .Container ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+footer .Container ul li{
+  text-decoration: none;
+  color: #555;
+  padding: 5px 0;
+}
+
+footer .Container ul li:hover {
+  color: #050404;
+  cursor: pointer;
+}
+
+/* Add your additional CSS styles here */
+
+@media screen and (min-width: 1600px) {
+    body{
+        margin: 0 auto;
+    }
+}
